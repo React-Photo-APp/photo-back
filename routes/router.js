@@ -1,9 +1,10 @@
-const { Router } = require('express');
-
-const homeRoutes = require('./homeRoutes');
+import { Router } from 'express';
+import homeRoutes from './homeRoutes';
+import picRoutes from './pictureRoutes';
 
 const router = Router();
 
 router.use('/', homeRoutes);
+router.use('/pic', picRoutes);
 
-module.exports = router;
+export default router;

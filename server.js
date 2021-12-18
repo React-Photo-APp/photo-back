@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const databaseConnect = require('./config/database');
-const router = require('./routes/router');
+import express from 'express';
+import cors from 'cors';
+import databaseConnect from './config/database';
+import router from './routes/router';
 
 const app = express();
 
